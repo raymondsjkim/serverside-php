@@ -1,9 +1,9 @@
 <?php 
 
 //get data from the form in index.html
-$product_name = $_POST['product_name'];
-$price = $_POST['price'];
-$discount_percent = $_POST['discount_percent'];
+$product_name = filter_input(INPUT_POST, 'product_name');
+$price = filter_input(INPUT_POST, 'price');
+$discount_percent = filter_input(INPUT_POST, 'discount_percent');
 
 //calculate discount price
 $discount = $price * $discount_percent * 0.01;
