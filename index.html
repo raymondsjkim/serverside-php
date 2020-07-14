@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
     <title>Discount Form</title>
 </head>
 <body>
     <h1>Discount Form</h1>
+
+    <form action="discount.php" method="POST">
+        <div class="form-group row">
+          <label for="product_name" class="col-sm-2 col-form-label">Product Name</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="product_name">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="price" class="col-sm-2 col-form-label">Price</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="price">
+          </div>
+        </div>
+        <div class="form-group row">
+            <label for="discount_percent" class="col-sm-2 col-form-label">Discount Percent</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="discount_percent">
+            </div>
+          </div>
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Calculate</button>
+          </div>
+        </div>
+      </form>
+
+    <!-- JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
